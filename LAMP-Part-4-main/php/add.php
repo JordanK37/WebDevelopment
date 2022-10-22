@@ -47,7 +47,7 @@ if ($conn->query($sql) === TRUE) {
 $SQL = "SELECT first FROM randuser";
 $result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
+if ($result->COUNT(*) > 0) {
   while($row = $result->fetch_assoc()) {
     echo "First Name: " . $row["first"] . "<br>";
   }
