@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Listing</title>
 </head>
+<div class="col-sm-3">
 <body>
+
     <h1>Added</h1>
 
 <!-- 
@@ -63,12 +65,13 @@ if ($result->num_rows > 0) {
   echo "0 results";
 }
 
+
 $conn->close();
 
 ?>
 
     <br><br>
     <button onclick="history.back()">Back</button>
-
+</div>
 </body>
 </html>
