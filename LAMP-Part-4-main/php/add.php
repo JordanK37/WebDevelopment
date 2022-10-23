@@ -18,6 +18,11 @@
 // DYNAMIC HTML
 $firstname = $_GET['apiFirst'];
 echo "<p><strong>$firstname</strong> has been added.</p>";
+$lastname = $_GET['apiLast'];
+echo "<p><strong>$lastname</strong> has been added.</p>";
+$country = $_GET['apiCountry'];
+echo "<p><strong>$country</strong> has been added.</p>";
+
 
 
 // DATABASE OPERATIONS:
