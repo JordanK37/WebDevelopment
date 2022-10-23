@@ -22,6 +22,8 @@ $lastname = $_GET['apiLast'];
 echo "<p><strong>$lastname</strong> has been added.</p>";
 $country = $_GET['apiCountry'];
 echo "<p><strong>$country</strong> has been added.</p>";
+$time = $_GET['apiTime'];
+echo "<p><strong>$time</strong> has been added.</p>";
 
 
 
@@ -41,7 +43,7 @@ if ($conn->connect_error) {
 }
 
 // SQL OPPERATIONS
-$sql = "INSERT INTO randuser (first, last, country) VALUES ('$firstname', '$lastname', '$country')";
+$sql = "INSERT INTO randuser (first, last, country) VALUES ('$firstname', '$lastname', '$country', '$time')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
@@ -54,7 +56,10 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
-    echo "First Name: " . $row["first"] . "<br>";
+    echo "First Name: " . $row["first"] ;
+    echo "Last Name: " . $row["last"] ;
+    echo "Country: " . $row["country"] ;
+    echo "Time: " . $row["time"] . "<br>" ;
   }
 } else {
   echo "0 results";
