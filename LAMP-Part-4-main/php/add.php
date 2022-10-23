@@ -1,11 +1,12 @@
 <html lang="en">
+<div1 class="h-100 d-flex align-items-center justify-content-center">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Listing</title>
 </head>
-
+<div class="container-fluid">
 <body>
 
     <h1>Added</h1>
@@ -74,7 +75,9 @@ $conn->close();
 ?>
 
     <br><br>
-    <button class= "btn btn-info" onclick="history.back()">Back</button>
+    <button onclick="history.back()" class="btn btn-primary">Back</button>
 
 </body>
+</div>
+</div1>
 </html>
