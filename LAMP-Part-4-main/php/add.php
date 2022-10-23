@@ -59,6 +59,9 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
     echo "First Name: " . $row["first"] . "<br>" ;
+    echo "Last Name: " . $row["last"] . "<br>" ;
+    echo "Country: " . $row["country"] . "<br>" ;
+    echo "Time: " . $row["time"] . "<br>" ;
   
   }
 } else {
