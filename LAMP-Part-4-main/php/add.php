@@ -77,6 +77,11 @@ $conn->close();
     <br><br>
     <button onclick="history.back()" class="btn btn-primary">Back</button>
 
+  <footer>
+    <p>Author: Jordan Kelly</p>
+    <p>So I used aligned and centered horizontally and vertically with bootstrap, it actually was much simpler than anticipated. I also changed the back button to be more user friendly.</p>
+  </footer>
+
 </body>
 </div>
 </div1>
