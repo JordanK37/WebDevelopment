@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Listing</title>
 </head>
-<div class="col-sm-3">
+
 <body>
 
     <h1>Added</h1>
@@ -71,7 +71,7 @@ $conn->close();
 ?>
 
     <br><br>
-    <button onclick="history.back()">Back</button>
-</div>
+    <button class= "btn btn-info" onclick="history.back()">Back</button>
+
 </body>
 </html>
