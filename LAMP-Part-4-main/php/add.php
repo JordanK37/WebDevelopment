@@ -43,7 +43,7 @@ if ($conn->connect_error) {
 }
 
 // SQL OPPERATIONS
-$sql = "INSERT INTO randuser (first, last, country) VALUES ('$firstname', '$lastname', '$country', '$time')";
+$sql = "INSERT INTO randuser (first, last, country, time) VALUES ('$firstname', '$lastname', '$country', '$time')";
 
 if ($conn->query($sql) === TRUE) {
   echo "New record created successfully";
