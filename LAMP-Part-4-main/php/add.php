@@ -54,46 +54,17 @@ if ($conn->query($sql) === TRUE) {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-$sql = "SELECT first FROM randuser";
+$sql = "SELECT first,last,country,time FROM randuser";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
-    echo "First Name: " . $row["first"] . "<br>" ;
+    echo "Name, Country, and time: " . $row["first"] . $row["last"] . $row["country"] . $row["time"] . "<br>" ;
   }
 } else {
   echo "0 results";
 }
-$sql = "SELECT last FROM randuser";
-$result = $conn->query($sql);
 
-if ($result->num_rows > 0) {
-  while($row = $result->fetch_assoc()) {
-    echo "Last Name: " . $row["last"] . "<br>" ;
-  }
-} else {
-  echo "0 results";
-}
-$sql = "SELECT country FROM randuser";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  while($row = $result->fetch_assoc()) {
-    echo "Country: " . $row["country"] . "<br>" ;
-  }
-} else {
-  echo "0 results";
-}
-$sql = "SELECT time FROM randuser";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  while($row = $result->fetch_assoc()) {
-    echo "Time: " . $row["time"] . "<br>" ;
-  }
-} else {
-  echo "0 results";
-}
 $conn->close();
 
 ?>
